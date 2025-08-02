@@ -1,0 +1,46 @@
+/* Input Box */
+.react-chatbot-kit-chat-input {
+  width: 100%;
+  border: 1px solid #fbc2d3;
+  border-radius: 0.5rem;
+  padding: 0.6rem 1rem;
+  font-size: 14px;
+  font-family: "Quicksand", sans-serif;
+  outline: none;
+}
+
+.react-chatbot-kit-chat-input:focus {
+  border-color: #ff69b4;
+  box-shadow: 0 0 0 2px rgba(255, 105, 180, 0.2);
+}
+
+/* Message Styling */
+.react-chatbot-kit-user-chat-message {
+  background-color: #ffe6f0;
+  color: #444;
+  font-family: "Quicksand", sans-serif;
+  border-radius: 12px;
+  padding: 8px 12px;
+}
+
+.react-chatbot-kit-chat-bot-message {
+  background-color: #fff0f5;
+  color: #d63384;
+  font-family: "Quicksand", sans-serif;
+  border-radius: 12px;
+  padding: 8px 12px;
+}
+
+/* Container Styling */
+.react-chatbot-kit-chat-message-container {
+  padding: 0 4px;
+}
+
+/* Optional: hide default bot avatar */
+.react-chatbot-kit-chat-bot-avatar-container {
+  display: none;
+}
+
+.react-chatbot-kit-chat-bot-message-arrow {
+  display: none;
+}
