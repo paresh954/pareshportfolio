@@ -55,6 +55,7 @@ const Navbar = () => {
             { label: "Contact", href: "/contact", icon: <FaEnvelope /> },
             { label: "Skills", href: "/skills", icon: <TbBrandVscode /> },
             { label: "Blog", href: "/blog", icon: <FaBlogger /> },
+            { label: "Admin", href: "/admin", icon: <FaBlogger /> },
           ].map(({ label, href, icon }) => (
             <li className="group" key={label}>
               <Link
