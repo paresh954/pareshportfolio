@@ -2,6 +2,9 @@ import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt, FaTimes } from "react-icons/fa";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import {
   FaReact,
   FaNodeJs,
@@ -70,12 +73,13 @@ const ProjectModal = ({ project, onClose }) => {
             <Slider {...sliderSettings}>
               {project.image.length !== 1 ? (
                 project.image.map((imgUrl, i) => (
-                  <img
-                    key={i}
-                    src={imgUrl}
-                    alt={`Screenshot ${i + 1}`}
-                    className="w-full h-52 object-cover rounded-lg border border-pink-100"
-                  />
+                  <div key={i}>
+                    <img
+                      src={imgUrl}
+                      alt={`Screenshot ${i + 1}`}
+                      className="w-full h-52 object-cover rounded-lg border border-pink-100"
+                    />
+                  </div>
                 ))
               ) : (
                 <img
